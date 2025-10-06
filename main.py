@@ -7,11 +7,12 @@ def main():
         print("\n--- MENÚ ---")
         print("1. Área Triángulo")
         print("2. Área Cuadrada")
-        print("3. Salir")
+        print("3. Área Circulo")
+        print("4. Salir")
 
         opcion = input("Elige una opción: ")
 
-        if opcion == "3":
+        if opcion == "4":
             print("Saliendo del programa...")
             break
 
@@ -21,6 +22,9 @@ def main():
         elif opcion == "2":
             op.leer_datos()
             op.areaRectangulo()
+        elif opcion == "3":
+            op.leer_radio()
+            op.areaCirculo()
         else:
             print("Opción inválida. Intenta de nuevo. ")
 
